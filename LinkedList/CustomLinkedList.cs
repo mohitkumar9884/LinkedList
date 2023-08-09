@@ -69,8 +69,23 @@ namespace LinkedList
             }
         }
 
+        public void RemoveFirst()
+        {
+            if(head==null)
+            {
+                Console.WriteLine("\nLinkedList is empty");
+            }
+            else
+            {
+                Console.WriteLine("\n{0} is removed from linkedList",head.data);
+                head=head.next;
+            }
+        }
+
         public void Display()
         {
+            Console.WriteLine("\nDisplaying nodes");
+           
             Node temp= head;
             if(head==null)
             {
@@ -80,7 +95,8 @@ namespace LinkedList
             {
                 while(temp!=null)
                 {
-                    Console.WriteLine(temp.data);
+                    Console.Write(temp.data+" ");
+                    Console.WriteLine(" ");
                     temp = temp.next;
                 }
             }
