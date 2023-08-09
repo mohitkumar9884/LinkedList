@@ -101,5 +101,14 @@ namespace LinkedList
                 }
             }
         }
+
+        public void RemoveLast()
+        {
+            Node temp= head;
+            if(head==null)
+            {
+                Console.WriteLine("No nodes are present");
+            }
+        }
     }
 }
