@@ -16,13 +16,13 @@ namespace LinkedList
                if(head==null)
                {
                     head = newNode;
-                    Console.WriteLine("{0} is inserted at lastNode", newNode.data);
+                   // Console.WriteLine("{0} is inserted at lastNode", newNode.data);
                }
                else
                {
                     Node lastNode = GetLastNode();
                     lastNode.next = newNode;
-                    Console.WriteLine("{0} is inserted at lastNode",newNode.data);        
+                    //Console.WriteLine("{0} is inserted at lastNode",newNode.data);        
                }
          }
 
@@ -35,6 +35,23 @@ namespace LinkedList
             }
             return temp;
 
+        }
+
+        public void Display()
+        {
+            Node temp= head;
+            if(head==null)
+            {
+                Console.WriteLine("LinkedList is empty");
+            }
+            else
+            {
+                while(temp!=null)
+                {
+                    Console.WriteLine(temp.data);
+                    temp = temp.next;
+                }
+            }
         }
     }
 }

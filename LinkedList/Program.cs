@@ -43,6 +43,7 @@
                     customLinkedList.AddLast(56);
                     customLinkedList.AddLast(30);
                     customLinkedList.AddLast(70);
+                    customLinkedList.Display();
                     break; 
                 
 
