@@ -9,6 +9,7 @@ namespace LinkedList
     internal class Node
     {
         public int data;
+        internal Node next;
 
         public Node(int data)
         {
