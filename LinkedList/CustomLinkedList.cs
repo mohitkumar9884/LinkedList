@@ -46,6 +46,11 @@ namespace LinkedList
 
         }
 
+        public void Append(int data)
+        {
+            AddLast(data);
+        }
+
         public void Display()
         {
             Node temp= head;
