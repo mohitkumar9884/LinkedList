@@ -51,6 +51,24 @@ namespace LinkedList
             AddLast(data);
         }
 
+        public void InsertBetween(int valueToInsert, int afterValue, int beforeValue)
+        {
+            Node currentNode = head;
+
+            while (currentNode != null)
+            {
+                if (currentNode.data == afterValue)
+                {
+                    Node newNode = new Node(valueToInsert);
+                    newNode.next = currentNode.next;
+                    currentNode.next = newNode;
+                    break;
+                }
+
+                currentNode = currentNode.next;
+            }
+        }
+
         public void Display()
         {
             Node temp= head;

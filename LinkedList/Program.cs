@@ -41,8 +41,9 @@
                 case 2:
                     CustomLinkedList customLinkedList = new CustomLinkedList();
                     customLinkedList.Append(56);
-                    customLinkedList.Append(30);
                     customLinkedList.Append(70);
+
+                    customLinkedList.InsertBetween(30, 56, 70);
                     customLinkedList.Display();
                     break;
                 
