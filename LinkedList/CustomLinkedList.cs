@@ -37,6 +37,15 @@ namespace LinkedList
 
         }
 
+        public void AddFirst(int data)
+        {
+            Node newNode = new Node(data);
+            newNode.next = head;
+            head = newNode;
+            Console.WriteLine("{0} is inserted at first", newNode.data);
+
+        }
+
         public void Display()
         {
             Node temp= head;

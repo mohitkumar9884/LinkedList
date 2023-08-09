@@ -6,7 +6,7 @@
         {
             Console.WriteLine("Welcome To Linked List Program.");
             Console.WriteLine("Please choose any one program from below options");
-            Console.WriteLine("1.Builtin Linked list\n2.Custom Linked List");
+            Console.WriteLine("1.Builtin Linked list\n2.Custom Linked List (AddFirst)");
             Console.WriteLine(" ");
             int option = Convert.ToInt32(Console.ReadLine());
 
@@ -15,15 +15,15 @@
                 case 1:
 
                     LinkedList<int> linkedList = new LinkedList<int>();
-                    linkedList.AddLast(10);
-                    linkedList.AddLast(20);
+                    linkedList.AddFirst(70);
+                    linkedList.AddFirst(30);
 
                     Console.WriteLine("\nDisplaying nodes");
                     foreach (int element in linkedList)
                     {
                         Console.WriteLine(element);
                     }
-                    linkedList.AddFirst(30);
+                    linkedList.AddFirst(56);
 
                     Console.WriteLine("\nDisplaying nodes");
                     foreach (int element in linkedList)
@@ -40,13 +40,12 @@
                     break;
                 case 2:
                     CustomLinkedList customLinkedList = new CustomLinkedList();
-                    customLinkedList.AddLast(56);
-                    customLinkedList.AddLast(30);
-                    customLinkedList.AddLast(70);
+                    customLinkedList.AddFirst(70);
+                    customLinkedList.AddFirst(30);
+                    customLinkedList.AddFirst(56);
                     customLinkedList.Display();
-                    break; 
+                    break;
                 
-
             }
             
         }
