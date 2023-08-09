@@ -109,6 +109,20 @@ namespace LinkedList
             {
                 Console.WriteLine("No nodes are present");
             }
+            else if (head.next==null)
+            {
+                head = null;
+            }
+            else
+            {
+                while(temp.next.next!=null)
+                {
+                    temp= temp.next;
+                }
+                Console.WriteLine(" ");
+                Console.WriteLine("{0} is removed  from last",temp.next.data);
+                temp.next = null;
+            }
         }
     }
 }

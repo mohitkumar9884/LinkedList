@@ -6,7 +6,7 @@
         {
             Console.WriteLine("Welcome To Linked List Program.");
             Console.WriteLine("Please choose any one program from below options");
-            Console.WriteLine("1.Builtin Linked list\n2.Custom Linked List (RemoveFirst)");
+            Console.WriteLine("1.Builtin Linked list\n2.Custom Linked List (RemoveLast)");
             Console.WriteLine(" ");
             int option = Convert.ToInt32(Console.ReadLine());
 
@@ -44,7 +44,7 @@
                     customLinkedList.Append(30);
                     customLinkedList.Append(70);
                     customLinkedList.Display();
-                    customLinkedList.RemoveFirst();
+                    customLinkedList.RemoveLast();
                     customLinkedList.Display();
                     break;
                 
