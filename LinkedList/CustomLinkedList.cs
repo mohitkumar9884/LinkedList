@@ -124,5 +124,31 @@ namespace LinkedList
                 temp.next = null;
             }
         }
+        public void Search(int input)
+        {
+            bool isFound= false;
+            Node temp= head;
+            if (temp!=null)
+            {
+                while (temp!=null)
+                {
+                    if (temp.data==input)
+                    {
+                        isFound= true;
+                        Console.WriteLine("{0} Node is Found", temp.data);
+                    }
+                    else
+                    {
+                        temp = temp.next;
+                    }
+                }
+                if (!isFound)
+                    Console.WriteLine("{0} Node is found", input);
+            }
+            else
+            {
+                Console.WriteLine("Linkedlist is Empty");
+            }
+        }
     }
 }
